@@ -25,6 +25,7 @@ public class CSVHelper {
 
                 for (CSVRecord csvRecord : csvRecords) {
                     Appartment appartment = new Appartment(
+                            csvRecord.get("id"),
                             csvRecord.get("street"),
                             csvRecord.get("status"),
                             Integer.parseInt(csvRecord.get("price")),

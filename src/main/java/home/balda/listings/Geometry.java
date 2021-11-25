@@ -17,5 +17,23 @@ import java.util.Properties;
 public class Geometry {
     ListingEnum type = ListingEnum.Point;
     Float[] coordinates;
-    Properties properties;
+
+
+    public ListingEnum getType() {
+        return type;
+    }
+
+    public void setType(ListingEnum type) {
+        this.type = type;
+    }
+
+    public Float[] getCoordinates() {
+        return coordinates;
+    }
+
+    public void setCoordinates(Float[] coordinates) {
+        this.coordinates = coordinates;
+    }
+
+
 }

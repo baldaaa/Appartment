@@ -1,5 +1,7 @@
 package home.balda.listings;
 
+import java.util.Map;
+
 /**
  * {
  * "type": "FeatureCollection", "features": [
@@ -15,4 +17,29 @@ package home.balda.listings;
 public class Feature {
     ListingEnum type = ListingEnum.Feature;
     Geometry geometry;
+    Map<Object,Object> properties;
+
+    public ListingEnum getType() {
+        return type;
+    }
+
+    public void setType(ListingEnum type) {
+        this.type = type;
+    }
+
+    public Geometry getGeometry() {
+        return geometry;
+    }
+
+    public void setGeometry(Geometry geometry) {
+        this.geometry = geometry;
+    }
+
+    public Map<Object,Object> getProperties() {
+        return properties;
+    }
+
+    public void setProperties(Map<Object,Object> properties) {
+        this.properties = properties;
+    }
 }

@@ -13,6 +13,8 @@ public class Appartment {
     @GeneratedValue
     Long id;
     @Column
+    String nativeId;
+    @Column
     String street;
     @Column
     String status;
@@ -30,10 +32,10 @@ public class Appartment {
     Float lng;
 
     public Appartment(){}
-    public Appartment(String street,String status,Integer price,
+    public Appartment(String nativeId, String street,String status,Integer price,
                       Integer bedrooms,Integer bathrooms,Integer sq_ft,
                       Float lat,Float lng){
-        this.id = id;
+        this.nativeId = nativeId;
         this.street = street;
         this.status = status;
         this.price = price;
@@ -109,11 +111,15 @@ public class Appartment {
         this.lat = lat;
     }
 
-    public Float getLng() {
-        return lng;
+    public String getNativeId() {
+        return nativeId;
     }
 
-    public void setLn(Float lng) {
+    public void setNativeId(String nativeId) {
+        this.nativeId = nativeId;
+    }
+
+    public void setLng(Float lng) {
         this.lng = lng;
     }
 }

@@ -29,7 +29,7 @@ public class ListingController {
     public ResponseEntity<List<Listing>> get(@RequestParam int min_price, @RequestParam int max_price,
                                              @RequestParam int min_bed, @RequestParam int max_bed,
                                              @RequestParam int min_bath, @RequestParam int max_bath) {
-        return new ResponseEntity<List<Listing>>(this.listingService.get(min_price,max_price,min_bed,max_bed,min_price,max_price), HttpStatus.OK);
+        return new ResponseEntity<List<Listing>>(this.listingService.get(min_price,max_price,min_bed,max_bed,min_bath,max_bath), HttpStatus.OK);
     }
 
     @ApiOperation(value = "Get all apartments and save to DB")

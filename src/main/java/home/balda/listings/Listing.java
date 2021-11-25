@@ -16,8 +16,21 @@ import java.util.List;
  */
 public class Listing {
     ListingEnum type = ListingEnum.FeatureCollection;
-    List< Feature> features;
+    Feature feature;
 
+    public ListingEnum getType() {
+        return type;
+    }
 
+    public void setType(ListingEnum type) {
+        this.type = type;
+    }
 
+    public Feature getFeatures() {
+        return feature;
+    }
+
+    public void setFeatures(Feature feature) {
+        this.feature = feature;
+    }
 }
